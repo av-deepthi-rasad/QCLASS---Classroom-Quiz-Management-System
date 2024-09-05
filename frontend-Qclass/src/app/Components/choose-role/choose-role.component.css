@@ -1,26 +1,21 @@
-
-.body-content{
- background-image: url('../../../assets/Images/3115328.png'); /* Path to your image */
- background-size: cover;
- height: 700px;
- color: black;
- padding-top: 100px;
- animation: fadeIn 1s ease-in-out;
-}
 .body-header{
     display: block; 
   justify-content: center;
   text-align: center;  
   padding-top: 35px;
-  animation: fadeIn 1.5s ease-in-out;
+ 
+}
+
+.body-header h2{
+    animation: fadeIn .5s ease-in-out;
+    color:#03373C ;
 }
 .body-header img{
     padding-top: 35px;
     width: 150px;
     height: 230px;
-    animation: fadeIn 2s ease-in-out;
-    animation: zoomInOut 2s ease-in-out;
 }
+
 .body-header h6{
     margin-top: 30px;
     max-width: 1000px;
@@ -28,8 +23,8 @@
     margin: 0 auto; /* Centers the element horizontally */
     text-align: center;
     padding: 10px;
-    animation: fadeIn 2.5s ease-in-out;
 }
+
 .flex-box{
     margin: 0 auto;
     max-width: 1000px;
@@ -38,7 +33,7 @@
     align-items: center;
     text-align: center;
     color: #02353C;
-    animation: fadeIn 3s ease-in-out;
+    
 }
 .box{
    
@@ -58,6 +53,7 @@
     width: 200px;
     transition: background-color 0.3s, color 0.3s, transform 0.3s; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    animation: zoomInOut 1s ease-in-out;
 }
 
 /* Login button styles */
@@ -84,20 +80,6 @@
     color: white;  
 }
 
-.footer {
-    position: fixed; 
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #02353C; 
-    color: white; 
-    text-align: center;
-    padding: 10px 0; 
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
-    z-index: 1000; 
-    font-size: 14px;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -108,6 +90,7 @@
         transform: translateY(0);
     }
 }
+
 
 @keyframes zoomInOut {
     0% {

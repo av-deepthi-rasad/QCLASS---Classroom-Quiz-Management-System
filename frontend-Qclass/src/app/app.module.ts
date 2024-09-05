@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomePageComponent } from './Pages/welcome-page/welcome-page.component';
 import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
+import { Welcome2PageComponent } from './Pages/welcome2-page/welcome2-page.component';
+import { ChooseRoleComponent } from './Components/choose-role/choose-role.component';
+import { StudentRegisterFormComponent } from './Components/student-register-form/student-register-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomePageComponent,
-    NavBarComponent
+    NavBarComponent,
+    Welcome2PageComponent,
+    ChooseRoleComponent,
+    StudentRegisterFormComponent
   ],
   imports: [
     BrowserModule,

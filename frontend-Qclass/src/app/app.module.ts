@@ -12,7 +12,7 @@ import { TeacherRegisterFormComponent } from './Components/teacher-register-form
 import { TeacherToolsComponent } from './Pages/teacher-tools/teacher-tools.component';
 import { CreateClasesComponent } from './Components/Teacher-components/create-clases/create-clases.component';
 import { CreateQuizComponent } from './Components/Teacher-components/create-quiz/create-quiz.component';
-
+import { FormsModule } from '@angular/forms'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +28,8 @@ import { CreateQuizComponent } from './Components/Teacher-components/create-quiz
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

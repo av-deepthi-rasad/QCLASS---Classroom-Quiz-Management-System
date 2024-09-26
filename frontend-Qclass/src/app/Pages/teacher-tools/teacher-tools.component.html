@@ -14,16 +14,16 @@
           </div>
           
         <ul class="sidebar-menu">
-          <li><button>Create Class</button></li>
-          <li><button>Select Class</button></li>
-          <li><button>Create Quiz</button></li>
-          <li><button>Manage Classes</button></li>
-          <li><button>View Reports</button></li>
+          <li><button (click)="navigateToCreateClass()">Create Class</button></li>
+          <li><button (click)="navigateToCreateQuiz()">Create Quiz</button></li>
+          <li><button (click)="navigateToManageClasses()">Manage Classes</button></li>
+          <li><button (click)="navigateToViewReports()">View Reports</button></li>
+          <li><button (click)="navigateToSettings()">Settings</button></li>
         </ul>
       </div>
 
       <div class="view-port">
-        <h2>VIEW PORT</h2>
+        <router-outlet></router-outlet>
     </div>
 
     </div>

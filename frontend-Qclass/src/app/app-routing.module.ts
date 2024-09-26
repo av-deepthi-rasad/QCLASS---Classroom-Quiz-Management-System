@@ -1,3 +1,5 @@
+import { CreateQuizComponent } from './Components/Teacher-components/create-quiz/create-quiz.component';
+import { CreateClasesComponent } from './Components/Teacher-components/create-clases/create-clases.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { WelcomePageComponent } from './Pages/welcome-page/welcome-page.component';
@@ -9,7 +11,7 @@ import { TeacherToolsComponent } from './Pages/teacher-tools/teacher-tools.compo
 
 const routes: Routes = [
   { path: '', component: WelcomePageComponent },
-  
+
   {
     path: 'SignUp', 
     component: Welcome2PageComponent, // Parent component
@@ -24,7 +26,11 @@ const routes: Routes = [
     path: 'Teacher',
     component: TeacherToolsComponent,
     children: [
-    
+    { path: 'class', component: CreateClasesComponent},
+    { path: 'quiz', component: CreateQuizComponent},
+    { path: 'manage', component: CreateQuizComponent},
+    { path: 'reports', component: CreateQuizComponent},
+    { path: 'settings', component: CreateQuizComponent},
     ]
   }
 ];

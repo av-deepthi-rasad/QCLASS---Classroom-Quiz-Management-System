@@ -9,34 +9,34 @@
 
     <div class="flex-box">
         <div class="registration-form">
-            <form>
+            <form (ngSubmit)="onSubmit()">
               <!-- Flex container for Name fields -->
               <div class="form-flex">
                 <div class="form-group">
                   <label for="name">Full Name</label>
-                  <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+                  <input type="text" id="name" name="name" required placeholder="Enter your full name" [(ngModel)]="user.name" />
                 </div>
                 <div class="form-group">
                   <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" required placeholder="Enter your email" />
+                  <input type="email" id="email" name="email" required placeholder="Enter your email" [(ngModel)]="user.email" />
                 </div>
               </div>
               <!-- Flex container for Password fields -->
               <div class="form-flex">
                 <div class="form-group">
                   <label for="password">Password</label>
-                  <input type="password" id="password" name="password" required placeholder="Enter your password" />
+                  <input type="password" id="password" name="password" required placeholder="Enter your password" [(ngModel)]="user.password" />
                 </div>
                 <div class="form-group">
                   <label for="confirm-password">Confirm Password</label>
-                  <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password" />
+                  <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password" [(ngModel)]="user.confirmPassword" />
                 </div>
               </div>
-              <!-- Flex container for Date of Birth and Gender fields -->
+              <!-- Flex container for Gender fields -->
               <div class="form-flex">
                 <div class="form-group">
                   <label for="gender">Gender</label>
-                  <select id="gender" name="gender" required>
+                  <select id="gender" name="gender" required [(ngModel)]="user.gender">
                     <option value="" disabled selected>Select your gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
@@ -47,6 +47,7 @@
               <!-- Submit button -->
               <button type="submit" class="register-btn">Register</button>
             </form>
-        </div>
+          </div>
+          
     </div>
 </div>

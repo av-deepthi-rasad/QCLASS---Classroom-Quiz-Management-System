@@ -12,4 +12,8 @@ export class ChooseRoleComponent {
   studentSignInPage(): void {
     this.router.navigate(['/SignUp/student']); 
   }
+
+  teacherSignInPage(): void {
+    this.router.navigate(['/SignUp/teacher']); 
+  }
 }

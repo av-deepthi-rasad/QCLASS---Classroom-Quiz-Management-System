@@ -1,0 +1,142 @@
+.page-content {
+    display: flex;
+    flex: 1; /* Ensures the content takes the remaining space */
+  }
+.body-content{
+    background-image: url('../../../assets/Images/3115328.png'); /* Path to your image */
+    background-size: cover;
+    height: 700px;
+    color: black;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+   }
+
+  .sidebar {
+    width: 250px;
+    height: 540px;
+    background-color: #03373C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+  
+  .profile {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .profile-img {
+    border: white solid 2px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 10px; /* Adds space between image and name */
+  }
+  
+  .profile-name {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white; /* Adjust based on your sidebar color */
+  }
+  
+  
+  .sidebar-menu {
+    list-style: none;
+    width: 100%;
+    margin-right: 30px;
+  }
+  
+  .sidebar-menu li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-menu button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3FD0C9;
+    color: rgb(48, 48, 48);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-menu button:hover {
+    background-color: #d7d7d7;
+  }
+  
+  /* Content Area */
+  .content {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 18px;
+    color: #666;
+  }
+
+  .view-port{
+    background-color: rgba(255, 255, 255, 0.5);
+     height: 550px;
+     width: 100%;
+     padding: 10px;
+     margin-left: 20px;
+     margin-top: 20px;
+     margin-right: 20px;
+     border-radius: 10px;
+     animation: fadeIn 0.5s ease-in-out;
+
+  }
+
+
+
+  
+  .footer {
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #02353C; 
+    color: white; 
+    text-align: center;
+    padding: 10px 0; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+    font-size: 14px;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: adds a slight vertical movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

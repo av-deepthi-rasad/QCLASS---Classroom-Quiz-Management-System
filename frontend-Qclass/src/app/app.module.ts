@@ -8,6 +8,10 @@ import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
 import { Welcome2PageComponent } from './Pages/welcome2-page/welcome2-page.component';
 import { ChooseRoleComponent } from './Components/choose-role/choose-role.component';
 import { StudentRegisterFormComponent } from './Components/student-register-form/student-register-form.component';
+import { TeacherRegisterFormComponent } from './Components/teacher-register-form/teacher-register-form.component';
+import { TeacherToolsComponent } from './Pages/teacher-tools/teacher-tools.component';
+import { CreateClasesComponent } from './Components/Teacher-components/create-clases/create-clases.component';
+import { CreateQuizComponent } from './Components/Teacher-components/create-quiz/create-quiz.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { StudentRegisterFormComponent } from './Components/student-register-form
     NavBarComponent,
     Welcome2PageComponent,
     ChooseRoleComponent,
-    StudentRegisterFormComponent
+    StudentRegisterFormComponent,
+    TeacherRegisterFormComponent,
+    TeacherToolsComponent,
+    CreateClasesComponent,
+    CreateQuizComponent
   ],
   imports: [
     BrowserModule,

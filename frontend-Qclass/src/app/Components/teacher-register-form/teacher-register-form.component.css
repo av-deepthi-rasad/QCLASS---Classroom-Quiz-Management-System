@@ -1,0 +1,140 @@
+/* Container styling */
+.body-header {
+    position: relative; /* Makes this container a positioning context */
+    padding: 20px;
+    text-align: center;
+  }
+  .body-header h2 {
+    margin-top: 20px;
+    color: #02353C;
+    animation: fadeIn 1s ease-in-out;
+   
+  }
+  .body-header h5 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #ffffff;
+  }
+  
+  /* Image container styling */
+  .image-container {
+    margin-top: 50px;
+    position: absolute;
+    top: 0; /* Aligns the images to the top of the parent container */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0; /* Ensure the images are behind the form */
+  }
+  
+  .bg-image {
+    height: 470px;
+    width: 300px; /* Adjust size as needed */
+    opacity: 0.8; /* Adjust transparency as needed */
+    pointer-events: none; /* Prevents images from interfering with form interactions */
+   
+  }
+  
+  .img-left {
+    margin-left: 180px;;
+    animation: zoomInOut 1s ease-in-out;
+  }
+  
+  .img-right {
+    margin-right: 200px;
+    animation: zoomInOut 1s ease-in-out;
+  }
+  
+  /* Registration form styling */
+  .registration-form {
+    margin: 0 auto;
+    position: relative;
+    background-color: #f9f9f9;
+    max-width: 850px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Keeps form above the background images */
+  }
+  
+  .registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Flex container for inline fields */
+  .form-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #02353C;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .register-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2dcd8f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    background-color: #23a06f;
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: adds a slight vertical movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.5); /* Start smaller */
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2); /* Zoom in */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* End at normal size */
+    }
+}

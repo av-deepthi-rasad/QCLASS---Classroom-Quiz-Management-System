@@ -10,9 +10,11 @@ export class WelcomePageComponent {
 
   constructor(private router: Router) { }
 
-  navigateToNewPage(): void {
+  navigateToSignUpPage(): void {
     this.router.navigate(['/SignUp/role']); 
   }
-
+  navigateToSignInPage(): void {
+    this.router.navigate(['/welcome/signIn']); 
+  }
 
 }

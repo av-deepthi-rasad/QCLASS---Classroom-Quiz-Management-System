@@ -8,6 +8,7 @@ import { ChooseRoleComponent } from './Components/choose-role/choose-role.compon
 import { StudentRegisterFormComponent } from './Components/student-register-form/student-register-form.component';
 import { TeacherRegisterFormComponent } from './Components/teacher-register-form/teacher-register-form.component';
 import { TeacherToolsComponent } from './Pages/teacher-tools/teacher-tools.component';
+import { LoginComponent } from './Components/login/login.component';
 
 const routes: Routes = [
   { path: '', component: WelcomePageComponent },
@@ -19,6 +20,14 @@ const routes: Routes = [
       { path: 'role', component: ChooseRoleComponent },
       { path: 'student', component: StudentRegisterFormComponent }, // Child route
       { path: 'teacher', component: TeacherRegisterFormComponent}
+    ]
+  },
+  {
+    path: 'welcome', 
+    component: Welcome2PageComponent, // Parent component
+    children: [
+      { path: 'signIn', component: LoginComponent },
+
     ]
   },
 

@@ -12,7 +12,8 @@ import { TeacherRegisterFormComponent } from './Components/teacher-register-form
 import { TeacherToolsComponent } from './Pages/teacher-tools/teacher-tools.component';
 import { CreateClasesComponent } from './Components/Teacher-components/create-clases/create-clases.component';
 import { CreateQuizComponent } from './Components/Teacher-components/create-quiz/create-quiz.component';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './Components/login/login.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     TeacherRegisterFormComponent,
     TeacherToolsComponent,
     CreateClasesComponent,
-    CreateQuizComponent
+    CreateQuizComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

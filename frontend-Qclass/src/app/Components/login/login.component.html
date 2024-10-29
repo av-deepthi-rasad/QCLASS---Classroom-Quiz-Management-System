@@ -1,0 +1,29 @@
+<div class="body-header">
+    <h2>SignIn to Qclass</h2>
+    <h5>Welcome Back! Please sign in to continue.</h5>
+
+
+
+    <div class="flex-box">
+        <div class="registration-form">
+            <form (ngSubmit)="onSubmit()">
+              <!-- Flex container for Name fields -->
+              <div class="form-flex">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required placeholder="Enter your email" [(ngModel)]="user.email">
+                </div>
+              </div>
+              <!-- Flex container for Password fields -->
+              <div class="form-flex">
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" required placeholder="Enter your password" [(ngModel)]="user.password" />
+                </div>
+              </div>
+      
+              <button type="submit" class="register-btn">SignIn</button>
+            </form>
+        </div>
+    </div>
+</div>
